@@ -1,0 +1,158 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    padding: 50px;
+    background: #fff5f8;
+    color: #d48a8c;
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 1.8em;
+    color: #a87175;
+}
+
+/* Event Details */
+.event-details {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #fff;
+    /* color: #333; */
+}
+
+.detail-box {
+    width: 30%;
+    background-color: #fafafa;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.detail-box h3 {
+    color: #a87175;
+}
+
+.detail-box a {
+    text-decoration: none;
+    color: #d48a8c;
+}
+
+.detail-box a:hover {
+    /* text-decoration: solid; */
+    color: #a87175;
+}
+
+/* Main Image Section */
+.main-image {
+    position: relative;
+    text-align: center;
+}
+
+.main-image img {
+    width: 50%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(244, 244, 244, 0.8);
+    padding: 10px 20px;
+    color: #a87175;
+    font-family: 'Playfair Display', serif;
+    border-radius: 4px;
+}
+
+/* RSVP Section */
+.rsvp {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.rsvp button {
+    background-color: #d48a8c;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s; /*enables the transition of the button hover */
+    margin: 10px;
+}
+
+.rsvp button:hover {
+    background-color: #a87175;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    font-size: 0.9em;
+}
+
+.footer a {
+    color: #d48a8c;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #a87175;
+}
+
+
+/* Responsive Section */
+@media (max-width: 768px) {
+.event-details {
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-box {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2em;
+}
+
+.header h2 {
+    font-size: 1.5em;
+}
+
+
+}
+
+
+
+
+
